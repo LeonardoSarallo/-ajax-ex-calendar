@@ -15,7 +15,7 @@ $(document).ready(function() {
     success: function(data)
     {
       var holidays = data.holidays;
-      $('ul li').each(function() {
+      $('.day').each(function() {
         var thisDate = $(this).attr('data-original_date');
         thisDate = moment(thisDate, 'YYYY-MM-D');
         console.log(thisDate);
@@ -56,7 +56,7 @@ $(document).ready(function() {
       menuHamb.removeClass('open');
     }
     else {
-      
+
       menuHamb.addClass('open');
 
     }
@@ -70,16 +70,16 @@ $(document).ready(function() {
     var days = date.daysInMonth()
     console.log(days);
 
-    $('.monthdisplay ul').html('');
+    $('.monthdisplay').html('');
 
     for (var i = 1; i <= days; i++) {
-      var template = $('.template li').clone();
+      var template = $('.template .day').clone();
       var liData = date.format('YYYY-MM-') + i;
 
       template.attr('data-original_date', liData)
       template.text(i + ' ' + date.format('MMM'));
 
-      $('.monthdisplay ul').append(template);
+      $('.monthdisplay').append(template);
     }
 
   }
@@ -100,7 +100,7 @@ function addHolidays(date)
     success: function(data)
     {
       var holidays = data.holidays;
-      $('ul li').each(function() {
+      $('.day').each(function() {
         var thisDate = $(this).attr('data-original_date');
         thisDate = moment(thisDate, 'YYYY-MM-D');
         console.log(thisDate);

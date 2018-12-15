@@ -39,19 +39,26 @@ body {
   background: green;
 }
 .monthdisplay {
-  padding: 30px;
   text-align: center;
   justify-content: center;
   width: 100%;
   height: calc(100% - 80px);
-  background: lightgrey;
+  padding: 30px;
+  background: white;
+}
+
+.day {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
 }
 
 ul {
 
   list-style: none;
 }
-li.active {
+.day.active {
   color: red;
 }
 .template {
