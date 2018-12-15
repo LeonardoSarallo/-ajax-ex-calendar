@@ -13,7 +13,7 @@ body {
 .container {
   width: 700px;
   height: 1000px;
-  background: red;
+
 }
 
 .menu {
@@ -25,6 +25,7 @@ body {
   background: yellow;
 }
 .month {
+  display: none;
   width: 100%;
   height: calc(100% - 100px);
   background: lightgrey
@@ -38,18 +39,25 @@ body {
   background: green;
 }
 .monthdisplay {
+  padding: 30px;
   text-align: center;
   justify-content: center;
   width: 100%;
   height: calc(100% - 80px);
-  background: red;
+  background: lightgrey;
 }
 
 ul {
 
   list-style: none;
 }
-
+li.active {
+  color: red;
+}
 .template {
   display: none;
+}
+
+.open {
+  display: block;
 }
