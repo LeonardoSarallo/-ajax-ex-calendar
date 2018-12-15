@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 700px;
-  height: 700px;
+  height: 1000px;
   background: red;
 }
 
@@ -38,7 +38,18 @@ body {
   background: green;
 }
 .monthdisplay {
+  text-align: center;
+  justify-content: center;
   width: 100%;
   height: calc(100% - 80px);
   background: red;
+}
+
+ul {
+
+  list-style: none;
+}
+
+.template {
+  display: none;
 }
