@@ -51,12 +51,12 @@ $(document).ready(function() {
 
   $(document).on('click', '#hamb', function() {
     var menuHamb = $('.month');
-    
+
     if (menuHamb.hasClass('open')) {
       menuHamb.removeClass('open');
     }
     else {
-      $('.dropdownmenu').removeClass('open');
+      
       menuHamb.addClass('open');
 
     }
