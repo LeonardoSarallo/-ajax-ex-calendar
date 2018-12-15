@@ -48,12 +48,18 @@ body {
 }
 
 .day {
+  position: relative;
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right:  1px solid black;
   float: left;
 }
-
+span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 ul {
 
   list-style: none;

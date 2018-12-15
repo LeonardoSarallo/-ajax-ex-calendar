@@ -111,7 +111,7 @@ function addHolidays(date)
           if (holidayDate.isSame(thisDate, 'day'))
           {
             $(this).addClass('active');
-            $(this).append(' - ' + holiday.name);
+            $(this).append('<span>' + holiday.name + '</span>');
           }
         }
       });
